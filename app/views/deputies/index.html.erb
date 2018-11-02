@@ -1,0 +1,21 @@
+<h1>Существующие депутаты</h1>
+<table class="table table-striped table-hover">
+  <tr>
+    <th>Имя</th>
+    <th>Фамилия</th>
+    <th>Отчество</th>
+    <th>Текущая должность</th>
+    <th colspan="2"></th>
+  </tr>
+
+  <% @deputies.each do |deputy| %>
+    <tr>
+      <td><%= deputy.name %></td>
+      <td><%= deputy.surname %></td>
+      <td><%= deputy.patronymic %></td>
+      <td><%= deputy.current_position %></td>
+      <td><%= link_to 'Show', deputy_path(deputy) %></td>
+      <td><%= link_to 'Edit', edit_deputy_path(deputy) %></td>
+    </tr>
+  <% end %>
+</table>
