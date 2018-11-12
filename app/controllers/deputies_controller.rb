@@ -8,26 +8,45 @@ class DeputiesController < ApplicationController
   end
 
   def create
-    params[:deputy].each do |key, value|
-      value.capitalize!
-    end
-    @deputy = Deputy.new (params[:deputy].permit(:name, :surname, :patronymic, :current_position))
+
+    @deputy = Deputy.new (capitalize deputy_params)
     @deputy.save
     redirect_to @deputy
   end
 
   def show
     @deputy = Deputy.find(params[:id])
-    @title = Deputy.find(params[:id]).name
+  end
+
+  def edit
+    @deputy = Deputy.find(params[:id])
   end
 
   def update
     @deputy = Deputy.find(params[:id])
 
-    if @deputy.update(params[:deputy].permit(:name, :surname, :patronymic, :current_position))
+    if @deputy.update(capitalize deputy_params)
       redirect_to @deputy
     else
       render 'edit'
     end
   end
+
+  def destroy
+    @deputy = Deputy.find(params[:id])
+    @deputy.destroy
+
+    redirect_to deputies_path
+  end
+
+  private
+    def deputy_params
+      params.require(:deputy).permit(:name, :surname, :patronymic, :current_position)
+    end
+
+    def capitalize(params)
+      params.each do |key, value|
+        value.capitalize!
+      end
+    end
 end
