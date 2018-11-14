@@ -1,1 +1,35 @@
 <div id="vmap"></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6"><h1>Выберите регион</h1></div>
+    <div class="col-md-6">
+      <div class="buttons float-right">
+        <%= link_to 'Существующие депутаты', deputies_path, class: "btn btn-primary" %>
+        <%= link_to 'Добавить чиновника', new_deputy_path, class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+  <table class="deputies table table-striped table-hover">
+    <tr class="headline thead-dark ">
+      <th>Фото</th>
+      <th>Имя
+        <small class="form-text sortby text-muted" data-sort-by="name">Sort by name</small>
+      </th>
+      <th>Фамилия
+        <small class="form-text sortby text-muted" data-sort-by="name">Sort by surname</small>
+      </th>
+      <th>Отчество
+        <small class="form-text sortby text-muted" data-sort-by="name">Sort by patronymic</small>
+      </th>
+      <th>Должность</th>
+      <th>Признак</th>
+      <th>Ущерб
+        <small class="form-text sortby text-muted" data-sort-by="name">Sort by detriment</small>
+      </th>
+      <th>Мера пресечения</th>
+      <th>Отбывание наказания</th>
+      <th>Дата</th>
+      <th>Пруф линки</th>
+    </tr>
+  </table>
+</div>

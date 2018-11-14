@@ -1,3 +1,24 @@
 // Place all the styles related to the Homepage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#vmap {
+  width: 100%;
+  height: 500px;
+}
+
+*[data-href] {
+  cursor: pointer;
+  color: #fff;
+}
+
+.sortby {
+  cursor: pointer;
+}
+
+.deputy-img {
+  width: 400px;
+}
+
+td .deputy-img {
+  width: 100px;
+}

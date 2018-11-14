@@ -1,24 +1,27 @@
-<h1>Существующие депутаты</h1>
-<table class="table table-striped table-hover">
-  <tr>
-    <th>Имя</th>
-    <th>Фамилия</th>
-    <th>Отчество</th>
-    <th>Текущая должность</th>
-    <th colspan="3"></th>
-  </tr>
-
-  <% @deputies.each do |deputy| %>
+<div class="container">
+  <h1>Существующие депутаты</h1>
+  <%= link_to 'Добавить', new_deputy_path, class: "btn btn-primary" %>
+  <%= link_to 'Назад', root_path%>
+  <table class="table table-striped table-hover">
     <tr>
-      <td><%= deputy.name %></td>
-      <td><%= deputy.surname %></td>
-      <td><%= deputy.patronymic %></td>
-      <td><%= deputy.current_position %></td>
-      <td><%= link_to 'Show', deputy_path(deputy) %></td>
-      <td><%= link_to 'Edit', edit_deputy_path(deputy) %></td>
-      <td><%= link_to 'Delete', deputy_path(deputy),
-                      method: :delete %></td>
-      <tr><%= link_to 'Добавить', new_deputy_path%></tr>
+      <th>Имя</th>
+      <th>Фамилия</th>
+      <th>Отчество</th>
+      <th>Текущая должность</th>
+      <th colspan="3"></th>
     </tr>
-  <% end %>
-</table>
+
+    <% @deputies.each do |deputy| %>
+      <tr>
+        <td><%= deputy.name %></td>
+        <td><%= deputy.surname %></td>
+        <td><%= deputy.patronymic %></td>
+        <td><%= deputy.current_position %></td>
+        <td><%= link_to 'Show', deputy_path(deputy), class: "btn btn-info" %></td>
+        <td><%= link_to 'Edit', edit_deputy_path(deputy), class: "btn btn-warning" %></td>
+        <td><%= link_to 'Delete', deputy_path(deputy),
+                        method: :delete, class: "btn btn-danger" %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

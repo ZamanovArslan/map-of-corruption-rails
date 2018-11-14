@@ -8,7 +8,6 @@ class DeputiesController < ApplicationController
   end
 
   def create
-
     @deputy = Deputy.new (capitalize deputy_params)
     @deputy.save
     redirect_to @deputy
@@ -40,13 +39,12 @@ class DeputiesController < ApplicationController
   end
 
   private
+
     def deputy_params
       params.require(:deputy).permit(:name, :surname, :patronymic, :current_position)
     end
 
     def capitalize(params)
-      params.each do |key, value|
-        value.capitalize!
-      end
+      params.each {|key, value| value.capitalize!}
     end
 end

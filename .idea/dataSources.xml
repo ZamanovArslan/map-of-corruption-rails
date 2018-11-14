@@ -7,5 +7,21 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/map-of-corruption-rails_development</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Rails map-of-corruption-rails: test" uuid="7a08d31d-8838-4e92-81d6-8c279ecb85d4">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/map-of-corruption-rails_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails map-of-corruption-rails: development" uuid="26c934c0-43ff-4c20-88da-412cce7a03b5">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/map-of-corruption-rails_development</jdbc-url>
+    </data-source>
   </component>
 </project>

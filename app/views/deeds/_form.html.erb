@@ -1,0 +1,48 @@
+<%= form_with scope: :deed, url: deeds_path, class: 'form-group', local: true do |f| %>
+  <div class="form-group">
+    <%= f.label :deputy_id, "Депутат" %><br>
+    <%= f.collection_select :deputy_id, Deputy.order(:name), :id, :full_name, {:prompt => "Выберите депутата"}, {:class => "form-control", required: true} %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :position, "Позиция" %><br>
+    <%= f.text_field :position, class: "form-control", placeholder: "Министерство внутренних дел РФ", required: true %>
+    <small class="form-text text-muted">Должность на момент совершения правонарушения</small>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :sign, "Признак" %><br>
+    <%= f.text_field :sign, class: "form-control", placeholder: "Получение взятки" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :detriment, "Ущерб" %><br>
+    <%= f.number_field :detriment, class: "form-control", placeholder: "200000" %>
+    <small class="form-text text-muted">Введите сумму в рублях</small>
+
+  </div>
+
+  <div class="form-group">
+    <%= f.label :punishment, "Мера пресечения" %><br>
+    <%= f.text_field :punishment, class: "form-control", placeholder: "Домашний арест" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :status, "Статус" %><br>
+    <%= f.text_field :status, class: "form-control", placeholder: "Дело закрыто" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :date %><br>
+    <%= f.date_field :date, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :region_value %><br>
+    <%= f.collection_select :region_code, Region.order(:region_value), :region_code, :region_value, {:prompt => "Выберите регион"}, {:class => "form-control"} %>
+    <br>
+  </div>
+
+  <%= f.button :submit, class: "btn btn-primary" %>
+<% end %>

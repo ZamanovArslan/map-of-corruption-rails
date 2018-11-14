@@ -2,9 +2,13 @@
 <% content_for :title, "Title for specific page" %>
 
 <div class="container">
-  <h2><%= @deputy.name %> <%= @deputy.surname %> <%= @deputy.patronymic %></h2>
-  <h5> ID: <%= @deputy.id %></h5>
-  <h6> <%= @deputy.current_position %></h6>
+  <h2 class="full-name font-weight-bold"><%= @deputy.name %> <%= @deputy.surname %> <%= @deputy.patronymic %></h2>
+  <h5 class="position"><%= @deputy.current_position %></h5>
+  <div class="row">
+    <div class="col-md-12">
+      <%= link_to 'Добавить дело', new_deputy_deed_path(@deputy), class: "btn btn-info float-right" %>
+    </div>
+  </div>
   <h5>Список дел</h5>
   <table class="deputies table table-striped table-hover">
     <tr class="headline thead-dark">
