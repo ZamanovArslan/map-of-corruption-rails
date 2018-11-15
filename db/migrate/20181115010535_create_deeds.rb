@@ -11,6 +11,6 @@ class CreateDeeds < ActiveRecord::Migration[5.2]
       t.timestamps
     end
     add_reference :deeds, :deputy, foreign_key: true
-    add_foreign_key :deeds, :regions, column: :region_code, primary_key: "region_code"
+    add_reference :deeds, :regions, foreign_key: true
   end
 end

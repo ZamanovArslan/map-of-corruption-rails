@@ -9,14 +9,14 @@
       <Owner>postgres</Owner>
     </database>
     <database id="3" parent="1" name="map-of-corruption-rails_development">
-      <ObjectId>18457</ObjectId>
-      <Owner>postgres</Owner>
+      <ObjectId>18902</ObjectId>
+      <Owner>rails_dev</Owner>
       <IntrospectionStateNumber>115</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </database>
     <database id="4" parent="1" name="map-of-corruption-rails_test">
-      <ObjectId>18537</ObjectId>
+      <ObjectId>18903</ObjectId>
       <Owner>ars</Owner>
     </database>
     <database id="5" parent="1" name="newdb">
@@ -128,8 +128,8 @@
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2018-11-15.03:55:07.159</IntrospectionTimestamp>
-      <IntrospectionStateNumber>80959</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-11-15.04:03:51.749</IntrospectionTimestamp>
+      <IntrospectionStateNumber>80978</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -176,63 +176,63 @@
       <Type>index</Type>
     </access-method>
     <sequence id="32" parent="25" name="deputies_id_seq">
-      <ObjectId>18811</ObjectId>
+      <ObjectId>18904</ObjectId>
       <Owner>rails_dev</Owner>
-      <StateNumber>80959</StateNumber>
+      <StateNumber>80974</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
     <table id="33" parent="25" name="ar_internal_metadata">
-      <ObjectId>18466</ObjectId>
+      <ObjectId>18923</ObjectId>
       <Owner>rails_dev</Owner>
-      <StateNumber>80735</StateNumber>
+      <StateNumber>80978</StateNumber>
     </table>
     <table id="34" parent="25" name="deputies">
-      <ObjectId>18813</ObjectId>
+      <ObjectId>18906</ObjectId>
       <Owner>rails_dev</Owner>
-      <StateNumber>80959</StateNumber>
+      <StateNumber>80974</StateNumber>
     </table>
     <table id="35" parent="25" name="schema_migrations">
-      <ObjectId>18458</ObjectId>
+      <ObjectId>18915</ObjectId>
       <Owner>rails_dev</Owner>
-      <StateNumber>80734</StateNumber>
+      <StateNumber>80975</StateNumber>
     </table>
     <column id="36" parent="33" name="key">
       <Position>1</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>80735</StateNumber>
+      <StateNumber>80978</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="37" parent="33" name="value">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>80735</StateNumber>
+      <StateNumber>80978</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="38" parent="33" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>80735</StateNumber>
+      <StateNumber>80978</StateNumber>
       <TypeId>1114</TypeId>
     </column>
     <column id="39" parent="33" name="updated_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>80735</StateNumber>
+      <StateNumber>80978</StateNumber>
       <TypeId>1114</TypeId>
     </column>
     <index id="40" parent="33" name="ar_internal_metadata_pkey">
-      <ObjectId>18472</ObjectId>
+      <ObjectId>18929</ObjectId>
       <ColNames>key</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="41" parent="33" name="ar_internal_metadata_pkey">
-      <ObjectId>18473</ObjectId>
+      <ObjectId>18930</ObjectId>
       <ColNames>key</ColNames>
       <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
@@ -241,7 +241,7 @@
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>80959</StateNumber>
+      <StateNumber>80974</StateNumber>
       <DefaultExpression>nextval(&apos;deputies_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
       <SequenceName>deputies_id_seq</SequenceName>
@@ -249,54 +249,54 @@
     <column id="43" parent="34" name="name">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>80959</StateNumber>
+      <StateNumber>80974</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="44" parent="34" name="surname">
       <Position>3</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>80959</StateNumber>
+      <StateNumber>80974</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="45" parent="34" name="patronymic">
       <Position>4</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>80959</StateNumber>
+      <StateNumber>80974</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="46" parent="34" name="current_position">
       <Position>5</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>80959</StateNumber>
+      <StateNumber>80974</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="47" parent="34" name="photo_href">
       <Position>6</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>80959</StateNumber>
+      <StateNumber>80974</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="48" parent="34" name="created_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>80959</StateNumber>
+      <StateNumber>80974</StateNumber>
       <TypeId>1114</TypeId>
     </column>
     <column id="49" parent="34" name="updated_at">
       <Position>8</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>80959</StateNumber>
+      <StateNumber>80974</StateNumber>
       <TypeId>1114</TypeId>
     </column>
     <index id="50" parent="34" name="deputies_pkey">
-      <ObjectId>18820</ObjectId>
+      <ObjectId>18913</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="51" parent="34" name="deputies_pkey">
-      <ObjectId>18821</ObjectId>
+      <ObjectId>18914</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>deputies_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
@@ -305,16 +305,16 @@
       <Position>1</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>80734</StateNumber>
+      <StateNumber>80975</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="53" parent="35" name="schema_migrations_pkey">
-      <ObjectId>18464</ObjectId>
+      <ObjectId>18921</ObjectId>
       <ColNames>version</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="54" parent="35" name="schema_migrations_pkey">
-      <ObjectId>18465</ObjectId>
+      <ObjectId>18922</ObjectId>
       <ColNames>version</ColNames>
       <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
