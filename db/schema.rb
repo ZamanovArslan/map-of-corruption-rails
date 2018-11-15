@@ -10,24 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_13_013119) do
+ActiveRecord::Schema.define(version: 2018_11_12_213514) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "deeds", force: :cascade do |t|
-    t.string "position"
-    t.string "sign"
-    t.string "punishment"
-    t.string "status"
-    t.string "region_code"
-    t.integer "detriment"
-    t.datetime "date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "deputy_id"
-    t.index ["deputy_id"], name: "index_deeds_on_deputy_id"
-  end
 
   create_table "deputies", force: :cascade do |t|
     t.string "name"
@@ -39,12 +25,4 @@ ActiveRecord::Schema.define(version: 2018_11_13_013119) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "regions", primary_key: "region_code", id: :string, force: :cascade do |t|
-    t.string "region_value"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_foreign_key "deeds", "deputies"
-  add_foreign_key "deeds", "regions", column: "region_code", primary_key: "region_code"
 end
