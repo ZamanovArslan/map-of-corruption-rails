@@ -1,8 +1,24 @@
+//= require maps/jquery.vmap
+//= require maps/jquery.vmap.russia
+//= require_self
 $(document).ready(function () {
+
     let colorRegion = '#1076C8'; // Цвет всех регионов
     let focusRegion = '#FF9900'; // Цвет подсветки регионов при наведении на объекты из списка
     let sortBy = "name";
-
+    let deputies;
+    $.ajax({
+        method: "get",
+        dataType: "json",
+        url: "/deputies",
+    })
+        .done(function (data) {
+            deputies = data.deputies;
+            /*sortProperties(deeds, sortBy);
+            printDeputies();*/
+        });
+    let current_code = null;
+    let current_deputies = [];
     $('#vmap').vectorMap({
         map: 'russia',
         backgroundColor: '#ffffff',
@@ -20,47 +36,71 @@ $(document).ready(function () {
         // Клик по региону
         onRegionClick: function (element, code, region) {
             $("h1").text(region);
-            $.ajax({
-                method: "get",
-                url: "/region",
-                data: {region_code: code}
-            })
-                .done(function (data) {
-                    console.log(data);
-                });
+            current_deputies = getDeputiesByRegionCode(code);
+            current_code = code;
+            printDeputies();
         }
     });
 
     function printDeputies() {
-        $(".deputies").find(".deed").remove();
-        $.each(deeds, function (index) {
-            //TODO: ВЫВОД ПОЛЕЙ
-            /*tr = "<tr class='deed'>";
-            $.each(JSON.parse(value), function(arrKey, arrValue){
-                tr += "<td>" + arrValue + "</td>";
+        $(".deputies").find(".deputy").remove();
+        $(".god-thanks").remove();
+        if (current_deputies != null && current_deputies.length > 0) {
+            $.each(current_deputies, function (index, deputy) {
+                let deputy_html = "<tr class='deputy " + deputy["id"] + "'>";
+                // tr += "<td ><img class=\"deputy-img\" src='" + deeds[index]["photo_href"] + "' alt='" + deeds[index]["name"] + "'>" + "</td>";
+                deputy_html += "<td>" + deputy["name"] + " " + deputy["surname"] + " " + deputy["patronymic"] + "</td>";
+                deputy_html += "<td>" + deputy["current_position"] + "</td>";
+                $.each(deputy["deeds"], function (index, deed) {
+                    if (deed["region_code"] === current_code) {
+                        let deed_html = '';
+                        let result = deed_html;
+                        deed_html += "<td>" + deed["sign"] + "</td>";
+                        deed_html += "<td>" + deed["detriment"] + "</td>";
+                        deed_html += "<td>" + deed["punishment"] + "</td>";
+                        deed_html += "<td>" + deed["status"] + "</td>";
+                        deed_html += "<td>" + formatDate(deed["date"]) + "</td>";
+                        result += deputy_html;
+                        result += deed_html;
+                        result += "<td>";
+                        $.each(deed["links"], function (index, link) {
+                            result += '<li><a href=\'' + link + '\'>' + link.substring(0, 10) + "..." + '</a></li>';
+                        });
+                        result += "</td>";
+                        result += "</tr>";
+                        $(".deputies tr:last-child").after(result);
+                    }
+                });
             });
-            tr += "</tr>";
-            $(".deputies").append(tr);*/
-            tr = "<tr class='deed " + deeds[index]["deed_id"] + "'>";
-            tr += "<td ><img class=\"deputy-img\" src='" + deeds[index]["photo_href"] + "' alt='" + deeds[index]["name"] + "'>" + "</td>";
-            tr += "<td>" + deeds[index]["name"] + "</td>";
-            tr += "<td>" + deeds[index]["surname"] + "</td>";
-            tr += "<td>" + deeds[index]["patronymic"] + "</td>";
-            tr += "<td>" + deeds[index]["position"] + "</td>";
-            tr += "<td>" + deeds[index]["sign"] + "</td>";
-            tr += "<td>" + deeds[index]["detriment"] + "</td>";
-            tr += "<td>" + deeds[index]["punishment"] + "</td>";
-            tr += "<td>" + deeds[index]["status"] + "</td>";
-            tr += "<td>" + deeds[index]["date"] + "</td>";
-            links = deeds[index]["proof_links"].split(" ");
-            tr += "<td><ul>";
-            $.each(links, function (index) {
-                console.log(links[index]);
-                tr += "<li><a href='" + links[index] + "'>" + links[index] + "</a></li>";
-            })
-            tr += "</ul></td>";
-            $(".deputies").append(tr)
-        })
+        } else {
+            $(".deputies").after("<p class='text-center font-weight-light font-italic god-thanks'>Слава богу[хоть в ж...] тут ничего.</p>");
+            console.log(current_deputies)
+        }
+    }
+
+    function getDeputiesByRegionCode(code) {
+        var d = [];
+        $.each(deputies, function (index, deputy) {
+            $.each(deputy["deeds"], function (index, deed) {
+                if (deed["region_code"] === code) {
+                    d.push(deputy);
+                    return false;
+                }
+            });
+        });
+        return d;
+    }
+
+    function formatDate(date) {
+        var d = new Date(date),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear();
+
+        if (month.length < 2) month = '0' + month;
+        if (day.length < 2) day = '0' + day;
+
+        return [year, month, day].join('-');
     }
 
     $('*[data-href]').on("click", function () {
@@ -69,9 +109,9 @@ $(document).ready(function () {
     });
 
     $('*[data-sort-by]').on("click", function () {
-        if (deeds != null) {
-            sortProperties(deeds, $(this).data('sort-by'));
-            printDeputies();
+        if (current_deputies != null && current_deputies.length > 0) {
+            sortProperties($(this).data('sort-by'));
+            printDeputies()
         }
         return false;
     });
@@ -80,22 +120,22 @@ $(document).ready(function () {
         $('#proof_link').append("hihi")
     });
 
-    function toHashMap(obj) {
-        var sortable = [];
-        for (var key in obj)
-            if (obj.hasOwnProperty(key))
-                sortable.push(JSON.parse(obj[key])); // each item is an array in format [key, value]
-        return sortable;
-    }
+    // function toHashMap(obj) {
+    //     var sortable = [];
+    //     for (var key in obj)
+    //         if (obj.hasOwnProperty(key))
+    //             sortable.push(JSON.parse(obj[key])); // each item is an array in format [key, value]
+    //     return sortable;
+    // }
 
-    function sortProperties(obj, title) {
-        if (title != sortBy) {
-            obj.sort(function (a, b) {
+    function sortProperties(title) {
+        if (title !== sortBy) {
+            current_deputies.sort(function (a, b) {
                 if (a[title] > b[title])
                     return 1
             });
         } else {
-            obj.reverse()
+            current_deputies.reverse()
         }
     }
 

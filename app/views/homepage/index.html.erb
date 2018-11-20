@@ -1,3 +1,6 @@
+<% content_for :header do %>
+  <% javascript_include_tag 'homepage.js' %>
+<% end %>
 <div id="vmap"></div>
 <div class="container-fluid">
   <div class="row">
@@ -11,21 +14,12 @@
   </div>
   <table class="deputies table table-striped table-hover">
     <tr class="headline thead-dark ">
-      <th>Фото</th>
-      <th>Имя
+      <th>Имя Фамилия Отчество
         <small class="form-text sortby text-muted" data-sort-by="name">Sort by name</small>
-      </th>
-      <th>Фамилия
-        <small class="form-text sortby text-muted" data-sort-by="name">Sort by surname</small>
-      </th>
-      <th>Отчество
-        <small class="form-text sortby text-muted" data-sort-by="name">Sort by patronymic</small>
       </th>
       <th>Должность</th>
       <th>Признак</th>
-      <th>Ущерб
-        <small class="form-text sortby text-muted" data-sort-by="name">Sort by detriment</small>
-      </th>
+      <th>Ущерб</th>
       <th>Мера пресечения</th>
       <th>Отбывание наказания</th>
       <th>Дата</th>

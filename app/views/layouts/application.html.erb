@@ -4,13 +4,13 @@
     <title><%= @title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= content_for :header %>
   </head>
 
   <body>
+    <%= link_to "Домой", root_path, class: "btn btn-primary" %>
     <%= yield %>
   </body>
 </html>

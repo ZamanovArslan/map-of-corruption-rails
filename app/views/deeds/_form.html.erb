@@ -39,10 +39,18 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :region_value %><br>
-    <%= f.collection_select :region_code, Region.order(:region_value), :region_code, :region_value, {:prompt => "Выберите регион"}, {:class => "form-control"} %>
+    <%= f.label :region_id %><br>
+    <%= f.collection_select :region_id, Region.order(:region_value), :id, :region_value, {:prompt => "Выберите регион"}, {:class => "form-control selectpicker"} %>
     <br>
   </div>
 
   <%= f.button :submit, class: "btn btn-primary" %>
 <% end %>
+<script>
+    $(document).ready(function () {
+        $.fn.selectpicker.Constructor.BootstrapVersion = '4';
+        $('select').selectpicker({
+            liveSearch: true
+        });
+    });
+</script>

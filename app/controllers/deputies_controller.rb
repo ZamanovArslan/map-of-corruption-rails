@@ -9,8 +9,12 @@ class DeputiesController < ApplicationController
 
   def create
     @deputy = Deputy.new (capitalize deputy_params)
-    @deputy.save
-    redirect_to @deputy
+    if @deputy.save
+      flash[:success] = "Депутат успешно добавлен"
+      redirect_to @deputy
+    else
+      render 'edit'
+    end
   end
 
   def show
@@ -23,8 +27,8 @@ class DeputiesController < ApplicationController
 
   def update
     @deputy = Deputy.find(params[:id])
-
     if @deputy.update(capitalize deputy_params)
+      flash[:success] = "Депутат успешно изменен"
       redirect_to @deputy
     else
       render 'edit'
@@ -40,11 +44,11 @@ class DeputiesController < ApplicationController
 
   private
 
-    def deputy_params
-      params.require(:deputy).permit(:name, :surname, :patronymic, :current_position)
-    end
+  def deputy_params
+    params.require(:deputy).permit(:name, :surname, :patronymic, :current_position)
+  end
 
-    def capitalize(params)
-      params.each {|key, value| value.capitalize!}
-    end
+  def capitalize(params)
+    params.each {|key, value| value.capitalize!}
+  end
 end

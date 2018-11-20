@@ -1,4 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <% if flash[:success] %>
+    <div class="alert alert-success" role="alert">
+      <%= flash[:success] %>
+    </div>
+  <% end %>
 
-<%= link_to 'Изменить', edit_deed_path(@deed) %> |
-<%= link_to 'Назад', deeds_path %>
+  <h3 class="font-weight-bold">Признак:</h3><%= @deed.sign %>
+  <h3 class="font-weight-bold">Регион:</h3><%= @deed.region.region_value %>
+  <h3 class="font-weight-bold">Ущерб:</h3><%= @deed.detriment %>
+  <h3 class="font-weight-bold">Мера пресечения:</h3><%= @deed.punishment %>
+  <h3 class="font-weight-bold">Отбывание наказания:</h3><%= @deed.status %>
+  <h3 class="font-weight-bold">Дата:</h3><%= @deed.date %>
+  <h3 class="font-weight-bold">Причастный депутат</h3><%= link_to @deed.deputy.full_name, @deed.deputy %>
+  <h3 class="font-weight-bold">Пруф линки:</h3>
+
+
+  <%= link_to 'Изменить', edit_deputy_deed_path(@deed) %> |
+  <%= link_to 'Назад', deeds_path %>
+
+</div>

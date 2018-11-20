@@ -6,6 +6,7 @@ class DeedsController < ApplicationController
   end
 
   def show
+    @deed = Deed.find params[:id]
   end
 
   def new
@@ -18,7 +19,8 @@ class DeedsController < ApplicationController
     @deed = Deed.new(deed_params)
     respond_to do |format|
       if @deed.save!
-        format.html {redirect_to @deed, notice: 'Deed was successfully created.'}
+        flash[:success] = "Дело успешно добавлено"
+        format.html {redirect_to @deed}
         format.json {render :show, status: :created, location: @deed}
       else
         format.html {render :new}
@@ -30,7 +32,8 @@ class DeedsController < ApplicationController
   def update
     respond_to do |format|
       if @deed.update(deed_params)
-        format.html {redirect_to @deed, notice: 'Deed was successfully updated.'}
+        flash[:success] = "Дело успешно обновлено"
+        format.html {redirect_to @deed}
         format.json {render :show, status: :ok, location: @deed}
       else
         format.html {render :edit}
@@ -40,6 +43,7 @@ class DeedsController < ApplicationController
   end
 
   def destroy
+    @deed = Deed.find params[:id]
     @deed.destroy
     respond_to do |format|
       format.html {redirect_to deeds_url, notice: 'Deed was successfully destroyed.'}
@@ -56,6 +60,6 @@ class DeedsController < ApplicationController
   end
 
   def deed_params
-    params.require(:deed).permit(:position, :sign, :detriment, :punishment, :status, :date, :deputy_id, :region_code)
+    params.require(:deed).permit(:position, :sign, :detriment, :punishment, :status, :date, :deputy_id, :region_id)
   end
 end
