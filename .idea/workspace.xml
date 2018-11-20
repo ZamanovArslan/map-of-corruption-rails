@@ -1,57 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d07c41c-26ef-45a6-bd33-6f72540273ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/global/bootstrap/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/global/bootstrap/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/global/popper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/deputies/_deputy.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/deputies/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/deputies/show.json.jbuilder" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f191471f-15d4-407d-87fc-8cfcdb299082.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f191471f-15d4-407d-87fc-8cfcdb299082.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f191471f-15d4-407d-87fc-8cfcdb299082/storage_v2/_src_/database/map-of-corruption-rails_development.cALdzg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f191471f-15d4-407d-87fc-8cfcdb299082/storage_v2/_src_/database/map-of-corruption-rails_development.cALdzg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/map-of-corruption-rails.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/map-of-corruption-rails.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/global/bootstrap/bootstrap.bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/global/bootstrap/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/deeds.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/deeds.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/homepage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/deeds_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/deeds_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/deputies_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/deputies_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/region_controller.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/deputy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/deputy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/region.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/region.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/deeds/_deed.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deeds/_deed.json.jbuilder" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/deeds/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deeds/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/deeds/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deeds/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/deeds/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deeds/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/deeds/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deeds/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/deeds/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deeds/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/deputies/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deputies/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/deputies/_head.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/deputies/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deputies/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/homepage/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homepage/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/simple_form.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/simple_form.en.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20181115010535_create_deeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20181115010535_create_deeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/templates/erb/scaffold/_form.html.erb" beforeDir="false" />
-    </list>
+    <list default="true" id="7d07c41c-26ef-45a6-bd33-6f72540273ae" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -171,7 +121,7 @@
           <entry key="js" value="48" />
           <entry key="lock" value="3" />
           <entry key="log" value="1" />
-          <entry key="rb" value="180" />
+          <entry key="rb" value="182" />
           <entry key="regions" value="11" />
           <entry key="ru" value="1" />
           <entry key="schema_migrations" value="1" />
@@ -189,7 +139,7 @@
           <entry key="JavaScript" value="48" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="RHTML" value="106" />
-          <entry key="Ruby" value="213" />
+          <entry key="Ruby" value="215" />
           <entry key="SCSS" value="26" />
           <entry key="Scratch" value="14" />
           <entry key="YAML" value="4" />
@@ -204,7 +154,7 @@
           <entry key="erb" value="3578" />
           <entry key="jbuilder" value="327" />
           <entry key="js" value="1735" />
-          <entry key="rb" value="3108" />
+          <entry key="rb" value="3110" />
           <entry key="scss" value="108" />
           <entry key="sql" value="68" />
           <entry key="txt" value="36" />
@@ -218,7 +168,7 @@
           <entry key="JavaScript" value="1735" />
           <entry key="PLAIN_TEXT" value="64" />
           <entry key="RHTML" value="3578" />
-          <entry key="Ruby" value="3411" />
+          <entry key="Ruby" value="3413" />
           <entry key="SCSS" value="108" />
           <entry key="Scratch" value="119" />
           <entry key="YAML" value="65" />
@@ -247,11 +197,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
@@ -313,6 +277,7 @@
       <find>printDeputies</find>
       <find>deputies</find>
       <find>current_deputies</find>
+      <find>default_url</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/views</dir>
@@ -328,7 +293,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/initializers/simple_form.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20181112235032_add_deputy_to_deeds.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/AddRegions.rb" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f191471f-15d4-407d-87fc-8cfcdb299082/console.sql" />
@@ -379,6 +343,7 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/deeds.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/homepage.js" />
         <option value="$PROJECT_DIR$/app/views/homepage/index.html.erb" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
       </list>
     </option>
   </component>
@@ -825,7 +790,7 @@
       <workItem from="1542367958556" duration="12000" />
       <workItem from="1542377845262" duration="2891000" />
       <workItem from="1542622847535" duration="14734000" />
-      <workItem from="1542715896263" duration="613000" />
+      <workItem from="1542715896263" duration="979000" />
     </task>
     <servers />
   </component>
@@ -841,7 +806,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94364000" />
+    <option name="totallyTimeSpent" value="94730000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -854,9 +819,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-7" width="1920" height="1087" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17982924" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17982924" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -869,7 +833,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.34033614" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34033614" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32897604" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32897604" />
@@ -889,16 +853,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deeds/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/deputies/_head.html.erb" />
     <entry file="file://$PROJECT_DIR$/app/views/deputies/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1160,6 +1114,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
