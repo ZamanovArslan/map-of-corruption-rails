@@ -29,7 +29,8 @@ $(document).ready(function () {
         enableZoom: true,
         showTooltip: true,
         onLabelShow: function (event, label, code) {
-
+            label.append("<br/><li>Количество дел: " + getDeedsCountByRegionCode(code) + "</li>" +
+                "<li>Количество депутатов:" + getDeputiesByRegionCode(code).length + "</li>");
         },
         selectedColor: focusRegion,
 
@@ -41,6 +42,18 @@ $(document).ready(function () {
             printDeputies();
         }
     });
+
+    function getDeedsCountByRegionCode(code){
+        var d = 0;
+        $.each(deputies, function (index, deputy) {
+            $.each(deputy["deeds"], function (index, deed) {
+                if (deed["region_code"] === code) {
+                    d++;
+                }
+            });
+        });
+        return d;
+    }
 
     function printDeputies() {
         $(".deputies").find(".deputy").remove();
@@ -73,8 +86,7 @@ $(document).ready(function () {
                 });
             });
         } else {
-            $(".deputies").after("<p class='text-center font-weight-light font-italic god-thanks'>Слава богу[хоть в ж...] тут ничего.</p>");
-            console.log(current_deputies)
+            $(".deputies").after("<p class='text-center font-weight-light font-italic god-thanks'>Слава богу[хоть в ж...] тут ничего.</p>")
         }
     }
 

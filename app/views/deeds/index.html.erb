@@ -1,37 +1,29 @@
-<div class="container">
-  <p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
-  <h1>Deeds</h1>
+<h1>Все дела</h1>
 
-  <table class="deputies table table-striped table-hover">
-    <tr class="headline thead-dark">
-      <th>Депутат</th>
-      <th>Признак</th>
-      <th>Регион</th>
-      <th>Ущерб</th>
-      <th>Мера пресечения</th>
-      <th>Отбывание наказания</th>
-      <th>Дата</th>
-      <th>Пруф линки</th>
-      <th colspan="3"></th>
+<table class="deputies table table-striped table-hover">
+  <tr class="headline thead-dark">
+    <th>Депутат</th>
+    <th>Признак</th>
+    <th>Регион</th>
+    <th>Ущерб</th>
+    <th>Мера пресечения</th>
+    <th>Отбывание наказания</th>
+    <th>Дата</th>
+    <th>Пруф линки</th>
+    <th colspan="1"></th>
+  </tr>
+  <% @deeds.each do |deed| %>
+    <tr>
+      <td><%= link_to deed.deputy.full_name, deed.deputy %></td>
+      <td><%= deed.sign %></td>
+      <td><%= deed.region.region_value %></td>
+      <td><%= deed.detriment %></td>
+      <td><%= deed.punishment %></td>
+      <td><%= deed.status %></td>
+      <td><%= deed.date.strftime("%F") %></td>
     </tr>
-    <% @deeds.each do |deed| %>
-      <tr>
-        <td><%= link_to deed.deputy.full_name, deed.deputy %></td>
-        <td><%= deed.sign %></td>
-        <td><%= deed.region.region_value %></td>
-        <td><%= deed.detriment %></td>
-        <td><%= deed.punishment %></td>
-        <td><%= deed.status %></td>
-        <td><%= deed.date %></td>
-        <td></td>
-        <td><%= link_to 'Посмотреть', deed %></td>
-        <td><%= link_to 'Изменить', edit_deed_path(deed) %></td>
-        <td><%= link_to 'Удалить', deed, method: :delete, data: {confirm: 'Are you sure?'} %></td>
-      </tr>
-    <% end %>
-  </table>
-  <br>
-
-  <%= link_to 'New Deed', new_deed_path %>
-</div>
+  <% end %>
+</table>
+<br>

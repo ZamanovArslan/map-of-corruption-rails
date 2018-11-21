@@ -4,7 +4,7 @@ json.deputies @deputies do |deputy|
   json.surname deputy.surname
   json.patronymic deputy.patronymic
   json.current_position deputy.current_position
-  json.photo_href deputy.photo_href
+  json.photo deputy.photo
 
   json.deeds deputy.deeds do |deed|
     json.position deed.position

@@ -1,4 +1,5 @@
 class DeedsController < ApplicationController
+  load_and_authorize_resource
   before_action only: [:show, :edit, :update, :destroy]
 
   def index
@@ -20,7 +21,7 @@ class DeedsController < ApplicationController
     respond_to do |format|
       if @deed.save!
         flash[:success] = "Дело успешно добавлено"
-        format.html {redirect_to @deed}
+        format.html {redirect_to @deed.deputy}
         format.json {render :show, status: :created, location: @deed}
       else
         format.html {render :new}
@@ -55,7 +56,7 @@ class DeedsController < ApplicationController
 
   def capitalize(params)
     params.each do |key, value|
-      value.capitalize! if key != :region_code
+      value.capitalize!
     end
   end
 

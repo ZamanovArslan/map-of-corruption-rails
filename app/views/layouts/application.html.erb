@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= @title %></title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= content_for :header %>
-  </head>
+<head>
+  <title><%= @title %></title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <%= content_for :header %>
+</head>
 
-  <body>
-    <%= link_to "Домой", root_path, class: "btn btn-primary" %>
-    <%= yield %>
-  </body>
+<body>
+<%- if controller_name != 'homepage' %>
+  <div class="container">
+    <%= link_to '<i class="fas fa-home"></i>'.html_safe, root_path%>
+<% end -%>
+
+<div class="float-right">
+  <% if admin_signed_in? %>
+
+    <span>Здравствуйте, <%= current_admin.login %></span>
+    <%= link_to 'Выйти', destroy_admin_session_path, :method => :delete %>
+  <% else %>
+    <%= link_to 'Войти', new_admin_session_path %> или <%= link_to 'Зарегистрироваться', new_admin_registration_path %>
+  <% end %>
+</div>
+
+<% if flash[:success] %>
+  <div class="alert alert-success" role="alert">
+    <%= flash[:success] %>
+  </div>
+<% end %>
+
+<%= yield %>
+
+<%- if controller_name != 'homepage' %>
+  </div>
+<% end -%>
+</body>
 </html>
