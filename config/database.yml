@@ -13,7 +13,7 @@ test:
  database: map-of-corruption-rails_test
 production:
  <<: *default
- database: 'd8o3p0p9dnmg3n'
+ database: d8o3p0p9dnmg3n
  host: ec2-54-246-85-234.eu-west-1.compute.amazonaws.com
  port: 5432
  username: nkhftwyuppymxr
