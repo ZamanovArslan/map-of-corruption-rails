@@ -1,23 +1,19 @@
 default: &default
-  adapter: postgresql
-  encoding: unicode
-
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
+ adapter: postgresql
+ encoding: unicode
+ pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 development:
-  <<: *default
-  database: map-of-corruption-rails_development
-  host: localhost
-  port: 5432
-  username: rails_dev
-
+ <<: *default
+ database: map-of-corruption-rails_development
+ host: localhost
+ port: 5432
+ username: rails_dev
 test:
-  <<: *default
-  database: map-of-corruption-rails_test
-
+ <<: *default
+ database: map-of-corruption-rails_test
 production:
-  <<: *default
-    database: map-of-corruption-rails_development
-    host: localhost
-    port: 5432
-    username: rails_dev
+ <<: *default
+ database: map-of-corruption-rails_development
+ host: localhost
+ port: 5432
+ username: rails_dev
