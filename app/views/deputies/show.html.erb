@@ -5,11 +5,15 @@
   <% end %>
 </div>
 <h6 class="position"><%= @deputy.current_position %></h6>
+<%= image_tag(@deputy.image.url(:medium)) if @deputy.image.exists? %>
+
 <div class="d-flex justify-content-between align-items-center pt-3 mb-2">
+
   <h5>Список дел </h5>
   <% if can? :create, @deed %><%= link_to 'Добавить дело', new_deputy_deed_path(@deputy), class: "btn btn-outline-success float-right" %>
   <% end %>
 </div>
+
 <table class="deputies table table-striped">
   <tr class="headline thead-dark">
     <th>Признак</th>

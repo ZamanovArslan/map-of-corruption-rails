@@ -61,7 +61,7 @@ $(document).ready(function () {
         if (current_deputies != null && current_deputies.length > 0) {
             $.each(current_deputies, function (index, deputy) {
                 let deputy_html = "<tr class='deputy " + deputy["id"] + "'>";
-                // tr += "<td ><img class=\"deputy-img\" src='" + deeds[index]["photo_href"] + "' alt='" + deeds[index]["name"] + "'>" + "</td>";
+                deputy_html += "<td ><img class=\"deputy-img\" src='" + deputy["image"] + "' alt='" + deputy["name"] + "'>" + "</td>";
                 deputy_html += "<td>" + deputy["name"] + " " + deputy["surname"] + " " + deputy["patronymic"] + "</td>";
                 deputy_html += "<td>" + deputy["current_position"] + "</td>";
                 $.each(deputy["deeds"], function (index, deed) {

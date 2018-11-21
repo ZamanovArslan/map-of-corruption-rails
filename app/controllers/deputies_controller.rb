@@ -11,7 +11,7 @@ class DeputiesController < ApplicationController
   end
 
   def create
-    @deputy = Deputy.new (capitalize deputy_params)
+    @deputy = Deputy.new (deputy_params)
     if @deputy.save
       flash[:success] = "Депутат успешно добавлен"
       redirect_to @deputy
@@ -48,7 +48,7 @@ class DeputiesController < ApplicationController
   private
 
   def deputy_params
-    params.require(:deputy).permit(:name, :surname, :patronymic, :current_position, :photo)
+    params.require(:deputy).permit(:name, :surname, :patronymic, :current_position, :image)
   end
 
   def capitalize(params)

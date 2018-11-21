@@ -17,9 +17,7 @@
 
   <% @deputies.each do |deputy| %>
     <tr>
-<!--
-      <td><%#= image_tag(deputy.photo, alt: 'Image') if deputy.photo %></td>
--->
+      <td><%= image_tag(deputy.image.url(:thumb)) if deputy.image.exists? %></td>
       <td><%= deputy.name %></td>
       <td><%= deputy.surname %></td>
       <td><%= deputy.patronymic %></td>
