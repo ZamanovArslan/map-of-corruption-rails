@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d07c41c-26ef-45a6-bd33-6f72540273ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7d07c41c-26ef-45a6-bd33-6f72540273ae" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -118,11 +116,12 @@
           <entry key="css" value="9" />
           <entry key="deeds" value="12" />
           <entry key="deputies" value="27" />
-          <entry key="erb" value="176" />
+          <entry key="erb" value="177" />
+          <entry key="gitignore" value="1" />
           <entry key="jbuilder" value="29" />
           <entry key="js" value="54" />
           <entry key="keep" value="1" />
-          <entry key="lock" value="16" />
+          <entry key="lock" value="17" />
           <entry key="log" value="2" />
           <entry key="png" value="1" />
           <entry key="rb" value="246" />
@@ -143,8 +142,8 @@
           <entry key="Database Element" value="52" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="54" />
-          <entry key="PLAIN_TEXT" value="23" />
-          <entry key="RHTML" value="176" />
+          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="RHTML" value="177" />
           <entry key="Ruby" value="295" />
           <entry key="SCSS" value="37" />
           <entry key="Scratch" value="14" />
@@ -159,7 +158,7 @@
           <entry key="coffee" value="24" />
           <entry key="css" value="26" />
           <entry key="dummy" value="97" />
-          <entry key="erb" value="4590" />
+          <entry key="erb" value="4601" />
           <entry key="jbuilder" value="327" />
           <entry key="js" value="1941" />
           <entry key="lock" value="7" />
@@ -177,7 +176,7 @@
           <entry key="HTML" value="2" />
           <entry key="JavaScript" value="1939" />
           <entry key="PLAIN_TEXT" value="168" />
-          <entry key="RHTML" value="4590" />
+          <entry key="RHTML" value="4601" />
           <entry key="Ruby" value="4003" />
           <entry key="SCSS" value="214" />
           <entry key="Scratch" value="119" />
@@ -195,11 +194,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="29" selection-start-column="29" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/deputies/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -216,7 +229,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bootstrapv</find>
       <find>bootst</find>
       <find>4</find>
       <find>$.fn</find>
@@ -243,9 +255,10 @@
       <find>carrie</find>
       <find>ruby</find>
       <find>config.assets.initialize_on_precompile</find>
-      <find>bundler</find>
       <find>bundle</find>
       <find>bund</find>
+      <find>bundler</find>
+      <find>bundl</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/views</dir>
@@ -298,7 +311,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20181121023603_add_attachment_image_to_deputies.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20181121023845_destroy_image_column_in_deputies.rb" />
         <option value="$PROJECT_DIR$/app/controllers/deputies_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/deputies/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/deputies/_deputy.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/deputies/index.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/models/deputy.rb" />
@@ -314,6 +326,7 @@
         <option value="$PROJECT_DIR$/Gemfile.lock" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/boot.rb" />
+        <option value="$PROJECT_DIR$/app/views/deputies/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -360,11 +373,6 @@
             <path>
               <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
               <item name="map-of-corruption-rails" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
-              <item name="map-of-corruption-rails" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -677,7 +685,7 @@
       <workItem from="1542715896263" duration="10305000" />
       <workItem from="1542752261438" duration="15031000" />
       <workItem from="1542770156941" duration="1291000" />
-      <workItem from="1542805361249" duration="15351000" />
+      <workItem from="1542805361249" duration="18793000" />
     </task>
     <servers />
   </component>
@@ -693,7 +701,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135729000" />
+    <option name="totallyTimeSpent" value="139171000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -720,7 +728,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32878152" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3382353" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20903361" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32897604" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32878152" />
@@ -880,13 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deputies/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/homepage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-204">
@@ -978,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3978">
-          <caret line="234" column="14" selection-start-line="234" selection-start-column="14" selection-end-line="234" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1019,12 +1013,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deputies/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4029">
+          <caret line="249" lean-forward="true" selection-start-line="249" selection-end-line="249" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="29" selection-start-column="29" selection-end-column="29" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
