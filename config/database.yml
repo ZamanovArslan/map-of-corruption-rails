@@ -13,7 +13,9 @@ test:
  database: map-of-corruption-rails_test
 production:
  <<: *default
- database: map-of-corruption-rails_development
- host: localhost
+ database: 'd8o3p0p9dnmg3n'
+ host: ec2-54-246-85-234.eu-west-1.compute.amazonaws.com
  port: 5432
- username: rails_dev
+ username: nkhftwyuppymxr
+ password: c5f967ea9ce2d01c96f8da559216e0f79a051438b3fbe3384a8ef10e9d995be6
+ URI: postgres://nkhftwyuppymxr:c5f967ea9ce2d01c96f8da559216e0f79a051438b3fbe3384a8ef10e9d995be6@ec2-54-246-85-234.eu-west-1.compute.amazonaws.com:5432/d8o3p0p9dnmg3n
