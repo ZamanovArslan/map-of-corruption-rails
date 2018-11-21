@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d07c41c-26ef-45a6-bd33-6f72540273ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -123,7 +123,7 @@
           <entry key="jbuilder" value="29" />
           <entry key="js" value="54" />
           <entry key="keep" value="1" />
-          <entry key="lock" value="7" />
+          <entry key="lock" value="10" />
           <entry key="log" value="2" />
           <entry key="png" value="1" />
           <entry key="rb" value="239" />
@@ -143,7 +143,7 @@
           <entry key="Database Element" value="52" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="54" />
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="PLAIN_TEXT" value="18" />
           <entry key="RHTML" value="176" />
           <entry key="Ruby" value="285" />
           <entry key="SCSS" value="37" />
@@ -153,7 +153,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Gemfile" value="42" />
+          <entry key="Gemfile" value="47" />
           <entry key="cell" value="51" />
           <entry key="coffee" value="24" />
           <entry key="css" value="26" />
@@ -176,7 +176,7 @@
           <entry key="JavaScript" value="1939" />
           <entry key="PLAIN_TEXT" value="121" />
           <entry key="RHTML" value="4590" />
-          <entry key="Ruby" value="3948" />
+          <entry key="Ruby" value="3953" />
           <entry key="SCSS" value="214" />
           <entry key="Scratch" value="119" />
           <entry key="YAML" value="133" />
@@ -206,7 +206,7 @@
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -215,7 +215,7 @@
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -752,7 +752,7 @@
       <workItem from="1542715896263" duration="10305000" />
       <workItem from="1542752261438" duration="15031000" />
       <workItem from="1542770156941" duration="1291000" />
-      <workItem from="1542805361249" duration="6634000" />
+      <workItem from="1542805361249" duration="7574000" />
     </task>
     <servers />
   </component>
@@ -768,7 +768,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127012000" />
+    <option name="totallyTimeSpent" value="127952000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -781,7 +781,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-7" width="1920" height="1087" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18623266" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1050,21 +1049,21 @@
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="149" column="13" selection-start-line="149" selection-start-column="6" selection-end-line="149" selection-end-column="13" />
+        <state relative-caret-position="416">
+          <caret line="248" column="12" lean-forward="true" selection-start-line="248" selection-start-column="12" selection-end-line="248" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
