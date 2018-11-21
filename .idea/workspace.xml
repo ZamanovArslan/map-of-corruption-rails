@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d07c41c-26ef-45a6-bd33-6f72540273ae" name="Default Changelist" comment="" />
+    <list default="true" id="7d07c41c-26ef-45a6-bd33-6f72540273ae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -150,7 +153,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Gemfile" value="30" />
+          <entry key="Gemfile" value="42" />
           <entry key="cell" value="51" />
           <entry key="coffee" value="24" />
           <entry key="css" value="26" />
@@ -173,7 +176,7 @@
           <entry key="JavaScript" value="1939" />
           <entry key="PLAIN_TEXT" value="121" />
           <entry key="RHTML" value="4590" />
-          <entry key="Ruby" value="3936" />
+          <entry key="Ruby" value="3948" />
           <entry key="SCSS" value="214" />
           <entry key="Scratch" value="119" />
           <entry key="YAML" value="133" />
@@ -203,7 +206,7 @@
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -749,7 +752,7 @@
       <workItem from="1542715896263" duration="10305000" />
       <workItem from="1542752261438" duration="15031000" />
       <workItem from="1542770156941" duration="1291000" />
-      <workItem from="1542805361249" duration="6345000" />
+      <workItem from="1542805361249" duration="6634000" />
     </task>
     <servers />
   </component>
@@ -765,7 +768,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126723000" />
+    <option name="totallyTimeSpent" value="127012000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -778,6 +781,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-7" width="1920" height="1087" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18623266" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1060,7 +1064,7 @@
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
