@@ -14,3 +14,10 @@ development:
 test:
   <<: *default
   database: map-of-corruption-rails_test
+
+production:
+  <<: *default
+    database: map-of-corruption-rails_development
+    host: localhost
+    port: 5432
+    username: rails_dev
