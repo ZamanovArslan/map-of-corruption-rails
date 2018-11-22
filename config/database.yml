@@ -6,7 +6,10 @@ defaults: &defaults
  pool: <%= [ENV.fetch("MAX_THREADS", 5).to_i, ENV.fetch("DB_POOL", 5).to_i].max %>
 
 development:
- database: <%= ENV.fetch("DATABASE_NAME", File.basename(Rails.root)) %>_dev
+ database: <%= ENV.fetch("DATABASE_NAME", File.basename(Rails.root)) %>_development
+ host: localhost
+ port: 5432
+ username: rails_dev
  <<: *defaults
 
 test:
