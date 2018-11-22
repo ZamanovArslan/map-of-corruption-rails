@@ -11,11 +11,9 @@ class DeedsController < ApplicationController
   end
 
   def new
-    flash[:disabled] = true unless params[:deputy_id].nil? else false
   end
 
   def edit
-    flash[:disabled] = true unless params[:deputy_id].nil? else false
   end
 
   def create
