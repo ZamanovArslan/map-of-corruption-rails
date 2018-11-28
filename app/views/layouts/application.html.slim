@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title
+      = @title
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    link[rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"]
+    = content_for :header
+  body
+    - if controller_name != 'homepage'
+      .container
+        = link_to '<i class="fas fa-home"></i>'.html_safe, root_path
+        .float-right
+          - if admin_signed_in?
+            span
+              | Здравствуйте,
+              = current_admin.login
+            = link_to 'Выйти', destroy_admin_session_path, :method => :delete
+          - else
+            = link_to 'Войти', new_admin_session_path
+            |  или
+            = link_to 'Зарегистрироваться', new_admin_registration_path
+        - if flash[:success]
+          .alert.alert-success[role="alert"]
+            = flash[:success]
+        = yield
+    - else
+      = yield

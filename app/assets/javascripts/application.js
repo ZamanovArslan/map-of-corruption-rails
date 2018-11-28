@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require rails-ujs
 //= require activestorage
+//= require deeds
 //= require_tree ./global/bootstrap
 //= require_tree ./global

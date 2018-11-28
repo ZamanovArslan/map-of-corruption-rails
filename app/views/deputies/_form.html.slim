@@ -1,0 +1,21 @@
+= form_with model: @deputy, class: 'form-group', local: true do |f|
+  .form-group
+    = f.label :punishment, "Имя"
+    br
+    = f.text_field :name, class: "form-control", placeholder: "Евгения", required: true
+  .form-group
+    = f.label :punishment, "Фамилия"
+    br
+    = f.text_field :surname, class: "form-control", placeholder: "Васильева", required: true
+  .form-group
+    = f.label :punishment, "Отчество"
+    br
+    = f.text_field :patronymic, class: "form-control", placeholder: "Николаевна", required: true
+  .form-group
+    = f.label :punishment, "Текущая должность"
+    br
+    = f.text_field :current_position, class: "form-control", placeholder: "Действительный государственный советник Российской Федерации 3 класса ", required: true
+  .form-group
+    = f.label :image
+    = f.file_field :image
+  = f.button :submit, class: "btn btn-primary"

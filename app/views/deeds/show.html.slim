@@ -1,0 +1,26 @@
+h3.font-weight-bold.pt-3
+  | Признак:
+= @deed.sign
+h3.font-weight-bold.pt-3
+  | Регион:
+= @deed.region.region_value
+h3.font-weight-bold.pt-3
+  | Ущерб:
+= @deed.detriment
+h3.font-weight-bold.pt-3
+  | Мера пресечения:
+= @deed.punishment
+h3.font-weight-bold.pt-3
+  | Отбывание наказания:
+= @deed.status
+h3.font-weight-bold.pt-3
+  | Дата:
+= @deed.date
+h3.font-weight-bold.pt-3
+  | Причастный депутат
+= link_to @deed.deputy.full_name, @deed.deputy
+h3.font-weight-bold.pt-3
+  | Пруф линки:
+= link_to 'Изменить', edit_deputy_deed_path(@deed)
+|  | 
+= link_to 'Назад', deeds_path

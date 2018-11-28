@@ -79,6 +79,7 @@ $(document).ready(function () {
                         $.each(deed["links"], function (index, link) {
                             result += '<li><a href=\'' + link + '\'>' + link.substring(0, 10) + "..." + '</a></li>';
                         });
+                        console.log(deed["links"])
                         result += "</td>";
                         result += "</tr>";
                         $(".deputies tr:last-child").after(result);
