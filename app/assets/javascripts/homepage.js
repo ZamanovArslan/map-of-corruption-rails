@@ -87,7 +87,7 @@ $(document).ready(function () {
                 });
             });
         } else {
-            $(".deputies").after("<p class='text-center font-weight-light font-italic god-thanks'>Слава богу[хоть в ж...] тут ничего.</p>")
+            $(".deputies").after("<p class='text-center font-weight-light font-italic god-thanks'>Тут ничего.</p>")
         }
     }
 
