@@ -73,6 +73,8 @@ ActiveRecord::Schema.define(version: 2019_01_23_004229) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "deeds", "admins"
   add_foreign_key "deeds", "deputies"
   add_foreign_key "deeds", "regions"
+  add_foreign_key "deputies", "admins"
 end
