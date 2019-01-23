@@ -17,6 +17,6 @@ class Deputy < ApplicationRecord
   end
 
   def rating
-    Deputy.all.sort {|x, y| x.deeds.count <=> y.deeds.count}.index(self) + 1
+    Deputy.all.sort {|y, x| x.deeds.count <=> y.deeds.count}.index(self) + 1
   end
 end
