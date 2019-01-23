@@ -21,7 +21,7 @@ $(document).ready(function () {
     let current_deputies = [];
     $('#vmap').vectorMap({
         map: 'russia',
-        backgroundColor: '#ffffff',
+        backgroundColor: '#f5f5f5',
         borderColor: '#ffffff',
         borderWidth: 2,
         color: colorRegion,
@@ -77,7 +77,7 @@ $(document).ready(function () {
                         result += deed_html;
                         result += "<td>";
                         $.each(deed["links"], function (index, link) {
-                            result += '<li><a href=\'' + link + '\'>' + link.substring(0, 10) + "..." + '</a></li>';
+                            result += '<li><a href=\'' + link + '\'>' + link.substring(0, 20) + "..." + '</a></li>';
                         });
                         console.log(deed["links"])
                         result += "</td>";
@@ -87,7 +87,7 @@ $(document).ready(function () {
                 });
             });
         } else {
-            $(".deputies").after("<p class='text-center font-weight-light font-italic god-thanks'>Тут ничего.</p>")
+            $(".deputies").after("<p class='text-center font-weight-light font-italic god-thanks pt-2'>Тут ничего.</p>")
         }
     }
 

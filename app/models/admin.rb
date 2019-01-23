@@ -1,4 +1,6 @@
 class Admin < ApplicationRecord
+  has_many :deeds
+  has_many :deputies
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable,

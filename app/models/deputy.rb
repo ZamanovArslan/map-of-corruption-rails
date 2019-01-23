@@ -8,4 +8,15 @@ class Deputy < ApplicationRecord
     "#{name} #{surname} #{patronymic}"
   end
 
+  def sum_of_detriment
+    sum = 0
+    deeds.each do |value|
+      sum += value.detriment
+    end
+    sum
+  end
+
+  def rating
+    Deputy.all.sort {|x, y| x.deeds.count <=> y.deeds.count}.index(self) + 1
+  end
 end

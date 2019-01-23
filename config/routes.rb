@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   get '/homepage/index'
   get '/region', to: 'region#show'
   root 'homepage#index'
+
+  resources :admins, only: [:show]
+
 end

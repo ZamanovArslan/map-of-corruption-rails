@@ -18,6 +18,7 @@ class DeedsController < ApplicationController
 
   def create
     @deed = Deed.new(deed_params)
+    @deed.admin_id = current_admin.id if current_admin
     respond_to do |format|
       if @deed.save!
         flash[:success] = "Дело успешно добавлено"

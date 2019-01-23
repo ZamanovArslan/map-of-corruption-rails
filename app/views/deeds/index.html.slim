@@ -1,40 +1,36 @@
-p#notice
-  = notice
-h1
-  | Все дела
-table.deputies.table.table-striped.table-hover
-  tr.headline.thead-dark
-    th
-      | Депутат
-    th
-      | Признак
-    th
-      | Регион
-    th
-      | Ущерб
-    th
-      | Мера пресечения
-    th
-      | Отбывание наказания
-    th
-      | Дата
-    th
-      | Пруф линки
-    th[colspan="1"]
-  - @deeds.each do |deed|
-    tr
-      td
-        = link_to deed.deputy.full_name, deed.deputy
-      td
-        = deed.sign
-      td
-        = deed.region.region_value
-      td
-        = deed.detriment
-      td
-        = deed.punishment
-      td
-        = deed.status
-      td
-        = deed.date.strftime("%F")
-br
+.well
+  h1.pt-2.pl-3
+    | Все дела
+  table.deeds.table.table-striped.table-hover
+    tr.headline.thead-dark
+      th
+        | Депутат
+      th
+        | Признак
+      th
+        | Регион
+      th
+        | Ущерб
+      th
+        | Мера пресечения
+      th
+        | Отбывание наказания
+      th
+        | Дата
+    - @deeds.each do |deed|
+      tr
+        td
+          = link_to deed.deputy.full_name, deed.deputy
+        td
+          = deed.sign
+        td
+          = deed.region.region_value
+        td
+          = deed.detriment
+        td
+          = deed.punishment
+        td
+          = deed.status
+        td
+          = deed.date.strftime("%F")
+  br

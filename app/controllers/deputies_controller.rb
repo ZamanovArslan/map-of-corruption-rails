@@ -12,6 +12,7 @@ class DeputiesController < ApplicationController
 
   def create
     @deputy = Deputy.new (deputy_params)
+    @deputy.admin_id = current_admin.id if current_admin
     if @deputy.save
       flash[:success] = "Депутат успешно добавлен"
       redirect_to @deputy
@@ -22,6 +23,7 @@ class DeputiesController < ApplicationController
 
   def show
     @deputy = Deputy.find(params[:id])
+    @deputy.update(:views => @deputy.views + 1)
   end
 
   def edit

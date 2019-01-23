@@ -1,9 +1,43 @@
 // Place all the styles related to the Deputies controller here.
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.position{
+.position {
   margin-top: -5px;
 }
-.add-deed-btn{
+
+.add-deed-btn {
   float: right;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.crop {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* input values to crop the image: top, right, bottom, left */
+.crop img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.views {
+  opacity: 0.5;
+}
+
+.deputies {
+  margin-bottom: 0;
+
 }

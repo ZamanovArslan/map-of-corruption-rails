@@ -1,48 +1,74 @@
-.d-flex.justify-content-between.align-items-center.pt-3
-  h2.full-name.font-weight-bold
-    = @deputy.full_name
-  - if can? :edit, @deputy
-    = link_to "Изменить", edit_deputy_path(@deputy), class: "btn btn-outline-secondary float-right"
-h6.position
-  = @deputy.current_position
-= image_tag(@deputy.image.url(:medium)) if @deputy.image.exists?
-.d-flex.justify-content-between.align-items-center.pt-3.mb-2
-  h5
-    | Список дел 
-  - if can? :create, @deed
-    = link_to 'Добавить дело', new_deputy_deed_path(@deputy), class: "btn btn-outline-success float-right"
-table.deputies.table.table-striped
-  tr.headline.thead-dark
-    th
-      | Признак
-    th
-      | Регион
-    th
-      | Ущерб
-    th
-      | Мера пресечения
-    th
-      | Отбывание наказания
-    th
-      | Дата
-    th[colspan="2"]
-  - @deputy.deeds.each do |deed|
-    tr
-      td
-        = deed.sign
-      td
-        = deed.region.region_value
-      td
-        = deed.detriment
-      td
-        = deed.punishment
-      td
-        = deed.status
-      td
-        = deed.date.strftime("%F")
-      td
-        - if can? :edit, @deed
-          = link_to 'Изменить', edit_deed_path(deed), class: "btn btn-warning"
-      td
-        - if can? :delete, @deed
-          = link_to 'Удалить', deputy_deed_path(deed), method: :delete, class: "btn btn-danger"
+.col-md-12
+  .row
+    .col-md-8.well.p-3
+      .row
+        .col-xs-12.col-sm-8
+          h2.full-name
+            = @deputy.full_name
+          p
+            strong> Текущая должность:
+            = @deputy.current_position
+          - if can? :edit, @deputy
+            = link_to "Изменить", edit_deputy_path(@deputy), class: "btn btn-outline-secondary"
+        .col-xs-12.col-sm-4.text-center
+          .crop
+            = image_tag(@deputy.image.url(:medium)) if @deputy.image.exists?
+
+
+    .col-md-3.well.offset-1.p-3
+      h3 Статистика:
+      p
+        strong> Кол-во правонарушений:
+        = @deputy.deeds.size
+      p
+        strong> На сумму:
+        = @deputy.sum_of_detriment
+      p
+        strong> Рейтинг:
+        = @deputy.rating
+      p.views.float-right
+        i.far.fa-eye.pr-1
+        = @deputy.views
+
+
+.well.pt-3
+  .d-flex.justify-content-between.align-items-center.mb-2
+    h4.pl-3
+      | Список дел
+    - if can? :create, @deed
+      = link_to 'Добавить дело', new_deputy_deed_path(@deputy), class: "btn btn-outline-success float-right"
+  table.deputies.table.table-striped
+    tr.headline.thead-dark
+      th
+        | Признак
+      th
+        | Регион
+      th
+        | Ущерб
+      th
+        | Мера пресечения
+      th
+        | Отбывание наказания
+      th
+        | Дата
+      th[colspan="2"]
+    - @deputy.deeds.each do |deed|
+      tr
+        td
+          = deed.sign
+        td
+          = deed.region.region_value
+        td
+          = deed.detriment
+        td
+          = deed.punishment
+        td
+          = deed.status
+        td
+          = deed.date.strftime("%F")
+        td
+          - if can? :edit, @deed
+            = link_to 'Изменить', edit_deed_path(deed), class: "btn btn-warning"
+        td
+          - if can? :delete, @deed
+            = link_to 'Удалить', deputy_deed_path(deed), method: :delete, class: "btn btn-danger"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_21_023944) do
+ActiveRecord::Schema.define(version: 2019_01_23_004229) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,8 @@ ActiveRecord::Schema.define(version: 2018_11_21_023944) do
     t.bigint "deputy_id"
     t.bigint "region_id"
     t.string "links", array: true
+    t.bigint "admin_id"
+    t.index ["admin_id"], name: "index_deeds_on_admin_id"
     t.index ["deputy_id"], name: "index_deeds_on_deputy_id"
     t.index ["region_id"], name: "index_deeds_on_region_id"
   end
@@ -59,6 +61,9 @@ ActiveRecord::Schema.define(version: 2018_11_21_023944) do
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
+    t.integer "views", default: 0
+    t.bigint "admin_id"
+    t.index ["admin_id"], name: "index_deputies_on_admin_id"
   end
 
   create_table "regions", force: :cascade do |t|

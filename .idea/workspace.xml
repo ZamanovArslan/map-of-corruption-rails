@@ -2,12 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d07c41c-26ef-45a6-bd33-6f72540273ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/map-of-corruption-rails.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/map-of-corruption-rails.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/admins_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admins/show.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f191471f-15d4-407d-87fc-8cfcdb299082.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f191471f-15d4-407d-87fc-8cfcdb299082.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f191471f-15d4-407d-87fc-8cfcdb299082/storage_v2/_src_/database/map-of-corruption-rails_development.cALdzg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f191471f-15d4-407d-87fc-8cfcdb299082/storage_v2/_src_/database/map-of-corruption-rails_development.cALdzg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/admin.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/admins.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/admins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/homepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/maps/jquery.vmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/maps/jquery.vmap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/admin.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/admins.css.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/deeds.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/deeds.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/deputies.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/deputies.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/deeds_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/deeds_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/deputies_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/deputies_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/admin_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/admins_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/admin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/admin.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/deed.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/deed.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/deputy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/deputy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/deeds/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deeds/_form.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/deeds/edit.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deeds/edit.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/deeds/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deeds/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/deeds/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deeds/new.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/deputies/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deputies/_form.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/deputies/edit.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deputies/edit.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/deputies/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deputies/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/deputies/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deputies/new.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/deputies/show.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/deputies/show.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/homepage/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homepage/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -24,7 +52,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/map_of_corruption_rails@AddRegions.rcov" NAME="AddRegions Coverage Results" MODIFIED="1542073220331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/tasks" MODULE_NAME="map-of-corruption-rails" />
     <SUITE FILE_PATH="coverage/map_of_corruption_rails@db_setup__map_of_corruption_rails.rcov" NAME="db:setup: map-of-corruption-rails Coverage Results" MODIFIED="1541160779472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="map-of-corruption-rails" />
-    <SUITE FILE_PATH="coverage/map_of_corruption_rails@Development__map_of_corruption_rails.rcov" NAME="Development: map-of-corruption-rails Coverage Results" MODIFIED="1543426653158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="map-of-corruption-rails" />
+    <SUITE FILE_PATH="coverage/map_of_corruption_rails@Development__map_of_corruption_rails.rcov" NAME="Development: map-of-corruption-rails Coverage Results" MODIFIED="1548199172640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="map-of-corruption-rails" />
     <SUITE FILE_PATH="coverage/map_of_corruption_rails@db_migrate.rcov" NAME="db:migrate Coverage Results" MODIFIED="1541170787223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="map-of-corruption-rails" />
     <SUITE FILE_PATH="coverage/map_of_corruption_rails@db_migrate__1_.rcov" NAME="db:migrate (1) Coverage Results" MODIFIED="1542244235460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="map-of-corruption-rails" />
     <SUITE FILE_PATH="coverage/map_of_corruption_rails@test__map_of_corruption_rails.rcov" NAME="test: map-of-corruption-rails Coverage Results" MODIFIED="1542380344217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="map-of-corruption-rails" />
@@ -90,45 +118,38 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="admins: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="map-of-corruption-rails_development@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="map-of-corruption-rails_development: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="deeds: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="map-of-corruption-rails_development@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="map-of-corruption-rails_development: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="deputies: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/deputies/show.html.slim">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-177">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/deeds/_form.html.slim">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/deeds.coffee">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="607">
+              <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -145,16 +166,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bootst</find>
-      <find>4</find>
-      <find>$.fn</find>
-      <find>$.fn.selec</find>
-      <find>config.assets.precompile</find>
-      <find>printDeputies</find>
-      <find>current_deputies</find>
-      <find>default_url</find>
-      <find>admin</find>
-      <find>example</find>
       <find>log in</find>
       <find>class=&quot;con</find>
       <find>class=&quot;conta</find>
@@ -175,6 +186,16 @@
       <find>bund</find>
       <find>bundler</find>
       <find>bundl</find>
+      <find>deputy</find>
+      <find>flas</find>
+      <find>back</find>
+      <find>background-color</find>
+      <find>color</find>
+      <find>FFF</find>
+      <find>rgb</find>
+      <find>css</find>
+      <find>setBackgroundColor</find>
+      <find>well</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/views</dir>
@@ -192,31 +213,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/javascripts/admin.js" />
-        <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/helpers/devise_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/admin.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/admin.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/ability.rb" />
-        <option value="$PROJECT_DIR$/app/models/deed.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/deeds/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/maps/maps.css" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/maps/jquery.vmap.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/maps/jqvmap.css" />
-        <option value="$PROJECT_DIR$/app/views/deeds/index.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20181121001823_fix_column_name.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/files_controller.rb" />
-        <option value="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20181121023603_add_attachment_image_to_deputies.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20181121023845_destroy_image_column_in_deputies.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/deputies_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/deputies/_deputy.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/deputies/index.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/models/deputy.rb" />
         <option value="$PROJECT_DIR$/app/views/deputies/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/deputies/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/homepage/index.html.erb" />
@@ -230,19 +228,42 @@
         <option value="$PROJECT_DIR$/.ruby-version" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/admin.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/views/deeds/_form.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/deputies/index.html.slim" />
-        <option value="$PROJECT_DIR$/app/views/deputies/show.html.slim" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/deeds.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/homepage.js" />
-        <option value="$PROJECT_DIR$/app/controllers/deeds_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/deeds/_form.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/deeds.coffee" />
+        <option value="$PROJECT_DIR$/app/models/deputy.rb" />
+        <option value="$PROJECT_DIR$/app/views/deputies/_form.html.slim" />
+        <option value="$PROJECT_DIR$/db/migrate/20190122174823_add_views_to_deputy.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/maps/jquery.vmap.js" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/maps/jqvmap.css" />
+        <option value="$PROJECT_DIR$/app/views/homepage/index.html.slim" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/homepage.scss" />
+        <option value="$PROJECT_DIR$/app/views/deputies/show.html.slim" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/deputies.scss" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/homepage.js" />
+        <option value="$PROJECT_DIR$/app/views/deeds/index.html.slim" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/deeds.scss" />
+        <option value="$PROJECT_DIR$/app/views/deputies/edit.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/deeds/new.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/deeds/edit.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/deputies/new.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/deputies/index.html.slim" />
+        <option value="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/admins_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/deed.rb" />
+        <option value="$PROJECT_DIR$/app/models/admin.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190123004229_add_reference_to_deeds_and_deputies.rb" />
+        <option value="$PROJECT_DIR$/app/views/deeds/_form.html.slim" />
+        <option value="$PROJECT_DIR$/app/controllers/deeds_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/deputies_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/admins/show.html.slim" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
       </list>
     </option>
   </component>
@@ -268,6 +289,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,24 +321,14 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="javascripts" type="462c0819:PsiDirectoryNode" />
-              <item name="global" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
-              <item name="map-of-corruption-rails" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
-              <item name="global" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
-              <item name="map-of-corruption-rails" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
               <item name="deeds.coffee" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="map-of-corruption-rails" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
@@ -328,6 +340,12 @@
               <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
               <item name="map-of-corruption-rails" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="map-of-corruption-rails" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -335,12 +353,39 @@
               <item name="map-of-corruption-rails" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="homepage" type="462c0819:PsiDirectoryNode" />
+              <item name="admins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="map-of-corruption-rails" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="deeds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="map-of-corruption-rails" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="deputies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="map-of-corruption-rails" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
               <item name="map-of-corruption-rails" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="map-of-corruption-rails" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="migrate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="map-of-corruption-rails" type="b2602c69:ProjectViewProjectNode" />
@@ -366,7 +411,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -685,6 +729,9 @@
       <workItem from="1542962772741" duration="600000" />
       <workItem from="1542973809263" duration="1161000" />
       <workItem from="1543422817376" duration="4460000" />
+      <workItem from="1543444960941" duration="1390000" />
+      <workItem from="1548170635342" duration="10656000" />
+      <workItem from="1548198999650" duration="6718000" />
     </task>
     <servers />
   </component>
@@ -700,7 +747,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155017000" />
+    <option name="totallyTimeSpent" value="173781000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -713,28 +760,29 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-7" width="1920" height="1087" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19477054" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2614728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32809225" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.31132075" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915967" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32878152" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49893278" visible="true" weight="0.39203355" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010672" side_tool="true" weight="0.39203355" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32897604" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32878152" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32897604" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="7" weight="0.32878152" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49893278" weight="0.3909853" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010672" side_tool="true" weight="0.39203355" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32897604" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32809225" />
+      <window_info anchor="bottom" id="Debug" order="13" weight="0.39832285" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.23852721" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.23852721" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -749,162 +797,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/deputies/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="66" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/spring">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map-of-corruption-rails/Gemfile" />
-    <entry file="file://$PROJECT_DIR$/map-of-corruption-rails/Gemfile.lock" />
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.6.0-preview2/lib/ruby/2.6.0/rubygems/rdoc.rb" />
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/spring.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/boot.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/deputy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="51">
-            <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.ru">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.ruby-version">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deputies/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f191471f-15d4-407d-87fc-8cfcdb299082/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-137">
-          <caret line="26" column="38" selection-end-line="81" selection-end-column="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="119" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/homepage/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="249" lean-forward="true" selection-start-line="249" selection-end-line="249" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deputies/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deeds/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="170" selection-start-line="3" selection-start-column="170" selection-end-line="3" selection-end-column="170" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/puma.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -916,90 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deeds/new.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deeds/edit.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deputies/_form.html.slim">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deeds/show.html.slim">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f191471f-15d4-407d-87fc-8cfcdb299082/database/map-of-corruption-rails_development/schema/public/table/admins">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f191471f-15d4-407d-87fc-8cfcdb299082/database/map-of-corruption-rails_development/schema/public/table/deputies">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deputies/index.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/homepage/index.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deputies/show.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-177">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f191471f-15d4-407d-87fc-8cfcdb299082/database/map-of-corruption-rails_development/schema/public/table/deeds">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/homepage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="83" column="2" selection-start-line="83" selection-start-column="2" selection-end-line="83" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1015,11 +823,62 @@
         <state relative-caret-position="-357" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/deeds_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/global/popper.js" />
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="63" column="127" lean-forward="true" selection-start-line="63" selection-start-column="127" selection-end-line="63" selection-end-column="127" />
+        <state relative-caret-position="510">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
         </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/sectional.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/deeds.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deeds/show.html.slim">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181116143539_add_links_to_deeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190122174823_add_views_to_deputy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/maps/jqvmap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/maps/jquery.vmap.russia.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5206" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
@@ -1029,24 +888,233 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/global/popper.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/maps/jquery.vmap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
+        <state relative-caret-position="6205">
+          <caret line="375" column="54" selection-start-line="375" selection-start-column="39" selection-end-line="375" selection-end-column="54" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deputies/show.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/deputies.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/homepage/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/homepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="89" column="101" selection-start-line="89" selection-start-column="101" selection-end-line="89" selection-end-column="101" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/deeds.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/homepage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deputies/edit.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deeds/new.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deeds/edit.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deputies/new.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deputies/_form.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deeds/index.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/confirmations/new.html.slim">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.slim">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/deputy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/deed.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181115010535_create_deeds.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.slim">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/deeds/_form.html.slim">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/deeds.coffee">
+    <entry file="file://$PROJECT_DIR$/app/models/admin.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f191471f-15d4-407d-87fc-8cfcdb299082/database/map-of-corruption-rails_development/schema/public/table/admins">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190123004229_add_reference_to_deeds_and_deputies.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deputies/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/deputies_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admins_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/deeds_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deeds/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="10" lean-forward="true" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admins/show.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f191471f-15d4-407d-87fc-8cfcdb299082/database/map-of-corruption-rails_development/schema/public/table/deeds">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f191471f-15d4-407d-87fc-8cfcdb299082/database/map-of-corruption-rails_development/schema/public/table/deputies">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
         </state>
       </provider>
     </entry>

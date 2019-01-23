@@ -39,7 +39,7 @@
 
         var defaultParams = {
             map: 'world_en',
-            backgroundColor: '#a5bfdd',
+            backgroundColor: '#f5f5f5',
             color: '#f4f3f0',
             hoverColor: '#c9dfaf',
             selectedColor: '#c9dfaf',

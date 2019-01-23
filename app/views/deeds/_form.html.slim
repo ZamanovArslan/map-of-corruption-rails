@@ -27,11 +27,10 @@
   .form-group
     = f.label :region_id
     = f.collection_select :region_id, Region.order(:region_value), :id, :region_value, {:prompt => "Выберите регион"}, {:class => "form-control selectpicker", required: true}
-
   .form-group
     = f.label :links
     = f.text_field :links, class: "form-control", placeholder: "https://ria.ru/infografika/20161117/1481606950.html", required: true, multiple: true
     .btn.btn-info.proof-link +
 
-  = f.button :submit, class: "btn btn-primary"
+  = f.button :Submit, class: "btn btn-primary"
 

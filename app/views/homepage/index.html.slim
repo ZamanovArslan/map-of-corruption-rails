@@ -1,34 +1,34 @@
 - content_for :header do
   - javascript_include_tag 'homepage.js'
+
+
 #vmap
-.d-flex.justify-content-between.align-items-center
-  .col-md-6
-    h1
-      | Выберите регион
-  .col-md-6
-    .buttons.float-right
-      = link_to 'Существующие депутаты', deputies_path, class: "btn btn-primary"
-      - if can? :create, @deputy
-        = link_to 'Добавить чиновника', new_deputy_path, class: "btn btn-primary"
-table.deputies.table.table-striped.table-hover
-  tr.headline.thead-dark
-    th
-      | Фото
-    th
-      | Имя Фамилия Отчество 
-      small.form-text.sortby.text-muted[data-sort-by="name"]
-        | Sort by name
-    th
-      | Должность
-    th
-      | Признак
-    th
-      | Ущерб
-    th
-      | Мера пресечения
-    th
-      | Отбывание наказания
-    th
-      | Дата
-    th
-      | Пруф линки
+.container-fluid
+  .well.pt-3
+    .d-flex.justify-content-between.align-items-center
+      .col-md-6
+        h1
+          | Выберите регион
+
+    table.deputies.table.table-striped.table-hover
+      tr.headline.thead-dark
+        th
+          | Фото
+        th
+          | Имя Фамилия Отчество
+          small.form-text.sortby.text-muted[data-sort-by="name"]
+            | Sort by name
+        th
+          | Должность
+        th
+          | Признак
+        th
+          | Ущерб
+        th
+          | Мера пресечения
+        th
+          | Отбывание наказания
+        th
+          | Дата
+        th
+          | Пруф линки
