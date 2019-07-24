@@ -1,1 +1,1 @@
-json.array! @deeds, partial: 'deeds/deed', as: :deed
+json.array! @deeds, partial: "deeds/deed", as: :deed

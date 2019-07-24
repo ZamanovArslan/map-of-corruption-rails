@@ -1,6 +1,6 @@
 class Admin < ApplicationRecord
-  has_many :deeds
-  has_many :deputies
+  has_many :deeds, dependent: :destroy
+  has_many :deputies, dependent: :destroy
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable,
@@ -10,6 +10,6 @@ class Admin < ApplicationRecord
          :trackable,
          :validatable
   def login
-    email.split('@')[0]
+    email.split("@")[0]
   end
 end

@@ -46,6 +46,9 @@ html
         - if flash[:success]
           .alert.alert-success[role="alert"]
             = flash[:success]
+        - if flash[:alert]
+          .alert.alert-error[role="alert"]
+            = flash[:alert]
         = yield
     - else
       = yield

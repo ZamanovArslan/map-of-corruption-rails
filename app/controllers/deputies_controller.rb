@@ -1,6 +1,6 @@
 class DeputiesController < ApplicationController
   load_and_authorize_resource
-  before_action only: [:show, :edit, :update, :destroy]
+  before_action only: %i[show edit update destroy]
 
   def index
     @deputies = Deputy.all
@@ -10,20 +10,24 @@ class DeputiesController < ApplicationController
     @deputy = Deputy.new
   end
 
+  # TODO
+  # decent_exposure
+  # responders
+
   def create
-    @deputy = Deputy.new (deputy_params)
+    @deputy = Deputy.new deputy_params
     @deputy.admin_id = current_admin.id if current_admin
     if @deputy.save
       flash[:success] = "Депутат успешно добавлен"
       redirect_to @deputy
     else
-      render 'edit'
+      render "edit"
     end
   end
 
   def show
     @deputy = Deputy.find(params[:id])
-    @deputy.update(:views => @deputy.views + 1)
+    @deputy.update(views: @deputy.views + 1)
   end
 
   def edit
@@ -36,7 +40,7 @@ class DeputiesController < ApplicationController
       flash[:success] = "Депутат успешно изменен"
       redirect_to @deputy
     else
-      render 'edit'
+      render "edit"
     end
   end
 

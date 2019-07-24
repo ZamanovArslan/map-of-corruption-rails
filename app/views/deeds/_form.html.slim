@@ -1,4 +1,7 @@
 = form_with model: @deed, class: 'form-group', local: true do |f|
+  - @deed.errors&.full_messages.each do |msg|
+    .alert.alert-danger[role="alert"] = msg
+
   .form-group
     = f.label :deputy_id, "Депутат"
     = f.collection_select :deputy_id, Deputy.order(:name), :id, :full_name, {:prompt => "Выберите депутата", :selected => params[:deputy_id]}, {:class => "form-control"}
